@@ -1,17 +1,24 @@
 import React from 'react';
 import './App.css';
 import logo from './netflix-logo.png';
-import MyCalendar from "./Calendar";
+import Updates from './Event';
+
 
 function App() {
   return (
+    <>
     <div className="App">
       <div className="logo">
         <img src={logo}/>
       </div>
-      nexflix
-      <MyCalendar />
+      <Updates/>
+      <footer style={{
+        marginTop: 50,
+        textAlign: "center",
+        color: "white"
+      }}>&copy; {new Date().getFullYear()} Copyright MIN / Netflix-Calendar </footer>
     </div>
+    </> 
   );
 }
 

@@ -1,11 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap'); */
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans')
+  }
+
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 button{
     border: 0px;
     outline: none;
+    color: #fff;
 }
 
 .App{ 
@@ -14,7 +23,7 @@ button{
 }
 
 .logo{
-    width: 150px;
+    width: 250px;
 }
 
 .logo img{
@@ -26,15 +35,29 @@ button{
     color: #fff;
 }
 
-
-.rbc-toolbar button{
-
+.list{
+    color: #fff;
 }
-.rbc-toolbar-label{
+
+.rbc-header{
+    height: 50px;
+    line-height: 50px;
+}
+
+.rbc-toolbar .rbc-btn-group button{
+    border: 0px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.rbc-toolbar .rbc-toolbar-label{
     font-size: 2rem;
     font-weight: bold;
+    text-align: right;
+    padding-left: 800px;
+
 }
 
 .rbc-date-cell a{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
