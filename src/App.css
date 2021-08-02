@@ -29,35 +29,88 @@ button{
 .logo img{
     width: 100%;
 }
-.calendar{
-    width: 90%;
+
+
+
+.calendar-box{
+    width: 90vw;
+    height: 80vh;
     margin-left: 5%;
     color: #fff;
+    border: 1px solid #ccc;
 }
+
+/* Header */
+
+
+.header{
+  padding: 20px 0;
+  color: #000;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.title{
+    width: 55%;
+    float: left;
+    padding: 10px 0; 
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: end;
+}
+
+.util-button{ 
+    text-align: center;
+    width: 30%;
+    float: right;
+    margin: 10px 0;
+}
+
+.util-button button{
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #222;
+    cursor: pointer;
+}
+
+/* calendar */
+
+.calendar{
+    width: 90%;
+    min-height: 650px;
+    margin-left: 5%;
+    color: #fff;
+    border: 1px solid #ccc;
+
+}.dateOfWeek,
+.row{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.dateOfWeek{ text-align: center; padding: 10px 0;}
+
+.box{
+    border: 1px solid #ccc;
+    height: 100px;
+
+}
+
+
+.box.selected{
+    background-color: #ccc;
+    color: #000;
+}
+
+.grayed{
+    background-color: #333;
+}
+/* List */
+
 
 .list{
     color: #fff;
 }
 
-.rbc-header{
-    height: 50px;
-    line-height: 50px;
-}
-
-.rbc-toolbar .rbc-btn-group button{
-    border: 0px;
-    color: #fff;
-    font-size: 1.2rem;
-}
-
-.rbc-toolbar .rbc-toolbar-label{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: right;
-    padding-left: 800px;
-
-}
-
-.rbc-date-cell a{
-    font-size: 0.8rem;
-}
