@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import logo from './netflix-logo.png';
-import Updates from './Event';
 import Calendar  from './Calendar';
+
 
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       <div clasName="calendar-box">
       <Calendar/>
       </div>
-      <Updates/>
       <footer style={{
         marginTop: 50,
         textAlign: "center",

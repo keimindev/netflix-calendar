@@ -84,25 +84,41 @@ button{
     margin-left: 5%;
     color: #fff;
     border: 1px solid #ccc;
+    border-bottom: 0px;
 
-}.dateOfWeek,
+}
+
+.dateOfWeek,
+
 .row{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    
 }
-.dateOfWeek{ text-align: center; padding: 10px 0;}
+
+.dateOfWeek{ 
+    text-align: center; 
+    padding: 15px 0;
+    font-weight: 600;
+}
+.dateOfWeek>div:nth-child(1){ color: red;}
 
 .box{
     border: 1px solid #ccc;
-    height: 100px;
+    height: 130px;
+    overflow-y: scroll;
+    display: block;
 
 }
 
 
 .box.selected{
-    background-color: #ccc;
+    background-color: #fff;
     color: #000;
 }
+
+.box:first-child{ border-left:0px;}
+.box:last-child{ border-right:0px;}
 
 .grayed{
     background-color: #333;
@@ -114,3 +130,33 @@ button{
     color: #fff;
 }
 
+
+.content-list{
+    list-style: none;
+}
+
+.type{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #888;
+}
+.content-title{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #333;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(173, 173, 173), #888);
+    border-radius: 10px;
+}
