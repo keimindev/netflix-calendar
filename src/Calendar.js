@@ -22,7 +22,7 @@ const Calendar = () => {
                 url: 'https://unogs-unogs-v1.p.rapidapi.com/aaapi.cgi',
                 params: {q: 'get:new7:US', p: '1', t: 'ns', st: 'adv'},
                 headers: {
-                  'x-rapidapi-key': 'd9e50a69bcmsh488be137274764dp134d8cjsnc93338e346b2',
+                  'x-rapidapi-key': 'YOUR_KEY',
                   'x-rapidapi-host': 'unogs-unogs-v1.p.rapidapi.com'
                 }
                 
